@@ -1,0 +1,30 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local buttonofdoom = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+buttonofdoom.Name = "buttonofdoom"
+buttonofdoom.Parent = ScreenGui
+buttonofdoom.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
+buttonofdoom.BorderSizePixel = 0
+buttonofdoom.Position = UDim2.new(0, 0, 0.474127561, 0)
+buttonofdoom.Size = UDim2.new(0.150000006, 0, 0.0500000007, 0)
+buttonofdoom.Font = Enum.Font.GothamBlack
+buttonofdoom.Text = "Finish"
+buttonofdoom.TextColor3 = Color3.fromRGB(255, 255, 255)
+buttonofdoom.TextScaled = true
+buttonofdoom.TextSize = 14.000
+buttonofdoom.TextWrapped = true
+buttonofdoom.MouseButton1Click:Connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3988.20313, 0.269964397, -46.0611801, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+	wait(0.1)
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-298.293396, 1.96210313, -276.580872, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
