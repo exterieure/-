@@ -116,7 +116,7 @@ if getgenv().AutoRender == true then
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
 	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = "#FUCKIKU , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
+	TextLabel.Text = "int alt control service. this account is named " .. game.Players.LocalPlayer.Name .. "!"
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
@@ -992,7 +992,7 @@ if Player then
 
 
 						
-					elseif Chat == ".setup klub" then
+					elseif Chat == ".setup club" then
 						SetUpClub()
 					
 					elseif Chat == ".monkey" then
@@ -1001,6 +1001,16 @@ if Player then
 						end
 						local Anim = Instance.new("Animation")
 						Anim.AnimationId = "http://www.roblox.com/asset/?id=3333499508"
+						CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
+						CurrAnim:Play()
+						CurrAnim:AdjustSpeed()
+					end
+          				elseif Chat == ".irish" then
+						if CurrAnim and CurrAnim.IsPlaying then
+							CurrAnim:Stop()
+						end
+						local Anim = Instance.new("Animation")
+						Anim.AnimationId = "http://www.roblox.com/asset/?id=3333432454"
 						CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						CurrAnim:Play()
 						CurrAnim:AdjustSpeed()
