@@ -1092,7 +1092,7 @@ if Player then
 
 						game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-					elseif Chat == ".stop drop" then
+					elseif Chat == ".stop" then
 						CustomDrop = false
 						StopDrop()
 					elseif Chat == ".setup vault" then
@@ -1209,7 +1209,11 @@ if Player then
 								wait(1)
 							end
 						end)()
-
+					elseif Chat == ".warship" then
+					
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Hello world', 'All');
+					end
+					
 					elseif Chat == ".check" then
 						local Drop = workspace.Ignored.Drop
 						local AmountOfMoney = 0
