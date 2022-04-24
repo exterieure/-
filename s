@@ -105,7 +105,7 @@ if getgenv().AutoRender == true then
 	Frame.Parent = main
 	Frame.Active = true
 	Frame.AnchorPoint = Vector2.new(0.5, 0.5)
-	Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Frame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 	Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Frame.Size = UDim2.new(1, 0, 1, 0)
 
