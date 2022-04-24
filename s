@@ -1005,7 +1005,7 @@ if Player then
 						CurrAnim:Play()
 						CurrAnim:AdjustSpeed()
 					end
-          	elseif Chat == ".irish" then
+          				elseif Chat == ".irish" then
 						if CurrAnim and CurrAnim.IsPlaying then
 							CurrAnim:Stop()
 						end
