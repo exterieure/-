@@ -1005,16 +1005,6 @@ if Player then
 						CurrAnim:Play()
 						CurrAnim:AdjustSpeed()
 					end
-          				elseif Chat == ".irish" then
-						if CurrAnim and CurrAnim.IsPlaying then
-							CurrAnim:Stop()
-						end
-						local Anim = Instance.new("Animation")
-						Anim.AnimationId = "http://www.roblox.com/asset/?id=3333432454"
-						CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
-						CurrAnim:Play()
-						CurrAnim:AdjustSpeed()
-					end
 					if Chat == ".muscle" then
 						AutoGrindStrength()
 					elseif Chat == ".stop muscle" then
