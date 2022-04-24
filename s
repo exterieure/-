@@ -111,7 +111,7 @@ if getgenv().AutoRender == true then
 
 	TextLabel.Parent = Frame
 	TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-	TextLabel.BackgroundColor3 = Color3.fromRGB(32, 32, 32)
+	TextLabel.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 	TextLabel.BackgroundTransparency = 1.000
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
