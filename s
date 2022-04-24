@@ -995,7 +995,7 @@ if Player then
 					elseif Chat == ".setup klub" then
 						SetUpClub()
 					
-					elseif Chat == ".monkey" then
+					elseif Chat == ".irish" then
 						if CurrAnim and CurrAnim.IsPlaying then
 							CurrAnim:Stop()
 						end
