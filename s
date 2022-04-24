@@ -1000,7 +1000,7 @@ if Player then
 							CurrAnim:Stop()
 						end
 						local Anim = Instance.new("Animation")
-						Anim.AnimationId = "http://www.roblox.com/asset/?id=3333499508"
+						Anim.AnimationId = "http://www.roblox.com/asset/?id=3333432454"
 						CurrAnim = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						CurrAnim:Play()
 						CurrAnim:AdjustSpeed()
