@@ -1,0 +1,39 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/vqmpjay/chatbypasser/main/chatbypasserv1'),true))()
+
+game:GetService("CoreGui").Rayfield.Main.LoadingFrame.Subtitle.Text = "Jax made mobile happen... by SSS, vxmpjay, poopydoopy & lolie"
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Menu = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+game:GetService("CoreGui").Rayfield.Main.Draggable = true
+game:GetService("CoreGui").Rayfield.Main.Topbar:Destroy()
+game:GetService("CoreGui").Rayfield.Notifications:Destroy()
+
+Menu.Name = "Menu"
+Menu.Parent = ScreenGui
+Menu.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Menu.BackgroundTransparency = 1.000
+Menu.Position = UDim2.new(0, 0, 0.445807785, 0)
+Menu.Size = UDim2.new(0.054188218, 0, 0.107975453, 0)
+Menu.Font = Enum.Font.SourceSans
+Menu.Text = "💬"
+Menu.TextColor3 = Color3.fromRGB(0, 0, 0)
+Menu.TextSize = 31.000
+Menu.TextWrapped = true
+Menu.Draggable = true
+Menu.MouseButton1Click:connect(function()
+	if game:GetService("CoreGui").Rayfield.Main.Visible == false then
+		game:GetService("CoreGui").Rayfield.Main.Visible = true
+	else
+		game:GetService("CoreGui").Rayfield.Main.Visible = false
+	end
+end)
